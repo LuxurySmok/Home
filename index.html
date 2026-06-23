@@ -273,6 +273,12 @@ background: linear-gradient(135deg, #ffd700, #ffed4e, #daa520);
 animation: shimmer 3s infinite linear;
 background-size: 200% auto;
 }
+.product-badge.ultra {
+background: linear-gradient(135deg, #8b0000, #dc143c, #ff1493);
+color: #fff;
+animation: shimmer 2s infinite linear;
+background-size: 200% auto;
+}
 @keyframes shimmer {
 0% { background-position: 0% center; }
 100% { background-position: 200% center; }
@@ -783,6 +789,8 @@ padding: 8px 12px;
 <li><a href="#inicio">Inicio</a></li>
 <li><a href="#productos">Productos</a></li>
 <li><a href="#luxury">💎 Luxury</a></li>
+<li><a href="#ultra">🔥 Ultra Premium</a></li>
+<li><a href="#cartuchos">🔋 Cartuchos</a></li>
 <li><a href="#nasty">Nasty</a></li>
 <li><a href="#oxbar">OXBAR</a></li>
 <li><a href="#voopoo">VOPOO</a></li>
@@ -1008,6 +1016,29 @@ onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>
 </div>
 </div>
 
+<!-- SKY SOLO PLUS -->
+<div class="product-card">
+<div class="product-badge luxury">💎 PLUS</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/Kctrf9MV/SKY-SOLO-PLUS.jpg"
+alt="SKY SOLO PLUS" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>☁️</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">SKY SOLO PLUS</h3>
+<p class="product-description">Versión mejorada con mayor capacidad de batería, ajuste de flujo de aire y diseño premium.</p>
+<div class="product-specs">
+<span class="spec">60W</span>
+<span class="spec">18000mAh</span>
+<span class="spec">Airflow Control</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('SKY SOLO PLUS', 219.00)">S/ 219.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('SKY SOLO PLUS')">Opinar</a>
+</div>
+</div>
+</div>
+
 <!-- GEN NANO -->
 <div class="product-card">
 <div class="product-badge luxury">⚡ MINI</div>
@@ -1027,6 +1058,52 @@ onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>
 <div class="product-actions">
 <button class="btn btn-primary" onclick="addToCart('GEN NANO', 159.00)">S/ 499.00</button>
 <a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('GEN NANO')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- RPM C -->
+<div class="product-card">
+<div class="product-badge luxury">🎮 SMART</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/nhpm3pJv/SMOK-NORD-C.png"
+alt="RPM C" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🎮</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">RPM C</h3>
+<p class="product-description">Sistema inteligente con pantalla TFT, ajuste de potencia y múltiples modos de vapeo.</p>
+<div class="product-specs">
+<span class="spec">Pantalla TFT</span>
+<span class="spec">1650mAh</span>
+<span class="spec">80W</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('RPM C', 259.00)">S/ 259.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('RPM C')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- RPM B -->
+<div class="product-card">
+<div class="product-badge luxury">🔌 COMPACTO</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/3Rs1RVD9/SMOK.png"
+alt="RPM B" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🔌</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">RPM B</h3>
+<p class="product-description">Diseño ergonómico y compacto, ideal para vapeo MTL con pods intercambiables.</p>
+<div class="product-specs">
+<span class="spec">1500mAh</span>
+<span class="spec">MTL</span>
+<span class="spec">Pods RPM</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('RPM B', 199.00)">S/ 199.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('RPM B')">Opinar</a>
 </div>
 </div>
 </div>
@@ -1054,6 +1131,29 @@ onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>
 </div>
 </div>
 
+<!-- LUXE X PRO -->
+<div class="product-card">
+<div class="product-badge luxury">🚀 PRO</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/FH9Qj23G/LUXE-X-PRO-YELLOW.png"
+alt="LUXE X PRO" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🚀</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">LUXE X PRO</h3>
+<p class="product-description">Tecnología de punta con pantalla OLED, control de temperatura y sistema de pods avanzado.</p>
+<div class="product-specs">
+<span class="spec">100W</span>
+<span class="spec">OLED Display</span>
+<span class="spec">Temp Control</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('LUXE X PRO', 549.00)">S/ 549.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('LUXE X PRO')">Opinar</a>
+</div>
+</div>
+</div>
+
 <!-- VOOPOO DRAG S2 -->
 <div class="product-card">
 <div class="product-badge luxury">🐉 DRAG</div>
@@ -1073,6 +1173,188 @@ onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>
 <div class="product-actions">
 <button class="btn btn-primary" onclick="addToCart('VOPOO DRAG S2', 199.00)">S/ 479.00</button>
 <a href="https://luxurysmok.github.io/DragS2/" class="btn btn-secondary" target="_blank">DETALLES</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="led-strip"></div>
+
+<!-- ===== SECCIÓN VAPE ULTRA PREMIUM ===== -->
+<h2 id="ultra" class="section-title">🔥 VAPE ULTRA PREMIUM</h2>
+<p style="text-align: center; color: #888; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+La élite del vapeo. Dispositivos exclusivos con tecnología revolucionaria y acabados de lujo.
+</p>
+
+<div class="products-grid" id="ultra-grid">
+<!-- GEEK VAPE PRODIGY -->
+<div class="product-card">
+<div class="product-badge ultra">👑 PRODIGY</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/BZRkLwGx/GEEK-VAPE.png"
+alt="GEEK VAPE PRODIGY" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>👑</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">GEEK VAPE PRODIGY</h3>
+<p class="product-description">El pináculo de la innovación. Chipset de última generación, construcción en acero inoxidable y sistema de refrigeración avanzado.</p>
+<div class="product-specs">
+<span class="spec">200W Max</span>
+<span class="spec">Dual 18650</span>
+<span class="spec">Geek Chip 3.0</span>
+<span class="spec">IP68 Rating</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('GEEK VAPE PRODIGY', 899.00)">S/ 899.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('GEEK VAPE PRODIGY')">Opinar</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="led-strip"></div>
+
+<!-- ===== SECCIÓN LIQUIDOS ===== -->
+<h2 id="cartuchos" class="section-title">🔋 LIQUIDOS PREMIUM</h2>
+<p style="text-align: center; color: #888; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+Cartuchos de repuesto y pods compatibles para todos nuestros dispositivos. Sabores premium disponibles.
+</p>
+
+<div class="products-grid" id="cartuchos-grid">
+<!-- EVEREST -->
+<div class="product-card">
+<div class="product-badge">PREMIUM</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/wvsKqH8C/EVEREST.png"
+alt="EVEREST" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>️</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">EVEREST</h3>
+<p class="product-description">Líquido premium Everest. Sabor fresco y mentolado para una experiencia refrescante.</p>
+<div class="product-specs">
+<span class="spec">60ml</span>
+<span class="spec">3mg</span>
+<span class="spec">Mentol</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('EVEREST', 45.00)">S/ 45.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('EVEREST')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- PARTY -->
+<div class="product-card">
+<div class="product-badge">FRUTAL</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/sD4kDwqp/PARTY.png"
+alt="PARTY" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🎉</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">PARTY</h3>
+<p class="product-description">Mezcla frutal explosiva. Sabor tropical perfecto para celebrar.</p>
+<div class="product-specs">
+<span class="spec">60ml</span>
+<span class="spec">3mg</span>
+<span class="spec">Frutal</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('PARTY', 45.00)">S/ 45.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('PARTY')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- PASSION RICHATTO -->
+<div class="product-card">
+<div class="product-badge">CLÁSICO</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/j5f9VXy7/TABACO.png"
+alt="TABACO" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🚬</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">PASSION RICHATTO</h3>
+<p class="product-description">Sabor clásico de frapucchino y miel.</p>
+<div class="product-specs">
+<span class="spec">60ml</span>
+<span class="spec">6mg</span>
+<span class="spec">Richatto</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('TABACO', 45.00)">S/ 45.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('TABACO')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- GUMMY -->
+<div class="product-card">
+<div class="product-badge">DULCE</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/90tn0Q8R/GUMMY.png"
+alt="GUMMY" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🍬</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">GUMMY</h3>
+<p class="product-description">Delicioso sabor a gomitas dulces. Perfecto para los amantes de lo dulce.</p>
+<div class="product-specs">
+<span class="spec">60ml</span>
+<span class="spec">3mg</span>
+<span class="spec">Dulce</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('GUMMY', 45.00)">S/ 45.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('GUMMY')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- NEON -->
+<div class="product-card">
+<div class="product-badge">ENERGÍA</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/HsdNKbn7/NEON.png"
+alt="NEON" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>⚡</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">NEON</h3>
+<p class="product-description">Sabor energético con toque cítrico. Vibrante y refrescante.</p>
+<div class="product-specs">
+<span class="spec">60ml</span>
+<span class="spec">3mg</span>
+<span class="spec">Cítrico</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('NEON', 45.00)">S/ 45.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('NEON')">Opinar</a>
+</div>
+</div>
+</div>
+
+<!-- DRINK -->
+<div class="product-card">
+<div class="product-badge">BEBIDA</div>
+<div class="product-image">
+<img src="https://i.postimg.cc/RZ0DC9wD/DRINK.png"
+alt="DRINK" loading="lazy"
+onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>🥤</div>'">
+</div>
+<div class="product-info">
+<h3 class="product-name">DRINK</h3>
+<p class="product-description">Mezcla de bebidas refrescantes. Sabor único y equilibrado.</p>
+<div class="product-specs">
+<span class="spec">60ml</span>
+<span class="spec">3mg</span>
+<span class="spec">Bebida</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-primary" onclick="addToCart('DRINK', 45.00)">S/ 45.00</button>
+<a href="#comentarios" class="btn btn-secondary" onclick="selectProductForComment('DRINK')">Opinar</a>
 </div>
 </div>
 </div>
@@ -1115,9 +1397,20 @@ onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'>
 <option value="Nasty FX10i">Nasty FX10i</option>
 <option value="Nasty PX15Ki">Nasty PX15Ki</option>
 <option value="SKY SOLO">SKY SOLO</option>
+<option value="SKY SOLO PLUS">SKY SOLO PLUS</option>
 <option value="GEN NANO">GEN NANO</option>
+<option value="RPM C">RPM C</option>
+<option value="RPM B">RPM B</option>
 <option value="LUXE XR MAX">LUXE XR MAX</option>
+<option value="LUXE X PRO">LUXE X PRO</option>
 <option value="VOPOO DRAG S2">VOPOO DRAG S2</option>
+<option value="GEEK VAPE PRODIGY">GEEK VAPE PRODIGY</option>
+<option value="EVEREST">EVEREST</option>
+<option value="PARTY">PARTY</option>
+<option value="TABACO">TABACO</option>
+<option value="GUMMY">GUMMY</option>
+<option value="NEON">NEON</option>
+<option value="DRINK">DRINK</option>
 </select>
 </div>
 </div>
